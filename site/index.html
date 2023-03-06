@@ -1,97 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Our Menu</title>
-<style>
-	/******* Base Styles ********/
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Module2-Assignment</title>
+	<style>
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
 
-	h1 {
-		margin-bottom: 30px;
-	}
+		section {
+			background: lightblue;
+			width: 30%;
+			float: left;
+			position: relative;
+			padding: 20px;
+			width: 300px;
+		}
 
-	p {
-		border: 5px solid black;
-		margin-bottom: 15px;
-		overflow: auto;
-	}
+		p{
+			text-align: center;
+		}
 
-	#p1{
-		background-color: green;
-		width: 100px;
-		height: 300px;
-	}
-	#p2{
-		background-color: pink;
-		width: 100px;
-		height: 100px;
-	}
-	#p3{
-		background-color: blueviolet;
-		width: 100px;
-		height: 100px;
-	}
+		h1 {
+			text-align: center;
+			margin-bottom: 30px;
+		}
 
-	/*************** Large Devices only *************/
+	/************ Large Devices **********/
+
 	@media (min-width: 992px){
-		#p1{
-			width: 80%;
-		}
-		#p2{
-			width: 150%;
-		}
-		#p3{
-			width: 100%;
-		}
-	}
-
-	/************* Medium Devices only ***********/
-	@media  (min-width: 768px) and (max-width: 991px) {
-		#p1{
+		section.section-class{
 			width: 50%;
 		}
-		#p2 {
-			width: 100px;
-			height: 100px;
+		section.section-class2{
+			width: 50%;
 		}
-		#p3{
-			width: 150%;
-			height: 150%;
-		}
-		
 	}
 
+	</style>
+	</head>
 
-</style>
-</head>
+
+
 <body>
+	<h1>The Menu</h1>
+	<div class="container">
+	<section class="section-class">
+	
+	<p class="title">Sushi</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section>
 
-	<h1>Our Menu</h1>
+	
+	<section class="section-class2">
+		<p class="title">Rice</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section>
+</div>
 
-	<p id="p1">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	</p>
-	<p id="p2">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	</p>
-	<p id="p3">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	</p>
 </body>
 </html>
