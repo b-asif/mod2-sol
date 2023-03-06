@@ -6,15 +6,19 @@
 	
 	<title>Module2-Assignment</title>
 	<style>
+		
+		/******** base styles **********/
+
 		*{
 			box-sizing: border-box;
+			border: 1px solid black;
 			margin: 0;
 			padding: 0;
 		}
 
 		section {
 			background: lightblue;
-			width: 30%;
+			/**width: 30%;**/
 			float: left;
 			position: relative;
 			padding: 20px;
@@ -24,19 +28,31 @@
 		p{
 			text-align: center;
 		}
+		
+
+		}
+		#p1{
+			width: 300px;
+			height: 300px;
+		}
+		#p2{
+			width: 300px;
+			height: 300px;
+		}
 
 		h1 {
 			text-align: center;
 			margin-bottom: 30px;
+			margin-top: 30px;
 		}
 
 	/************ Large Devices **********/
 
 	@media (min-width: 992px){
-		section.section-class{
+		section.p1{
 			width: 50%;
 		}
-		section.section-class2{
+		section.p2{
 			width: 50%;
 		}
 	}
@@ -49,9 +65,9 @@
 <body>
 	<h1>The Menu</h1>
 	<div class="container">
-	<section class="section-class">
+	<section class="p1">
 	
-	<p class="title">Sushi</p>
+	<p class="title"><b>Sushi</b></p>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -61,7 +77,7 @@
 </section>
 
 	
-	<section class="section-class2">
+	<section class="p2">
 		<p class="title">Rice</p>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
