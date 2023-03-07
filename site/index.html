@@ -12,9 +12,17 @@
 	}
 
 	
-	body{
-		margin: 0;
+	p {
+		border: 1px solid black;
+		margin-right: auto;
+		margin-left: auto;
+		height: 150px;
+		width: 70%;
 		padding: 0;
+	}
+
+	.row{
+		width: 100%;
 	}
 
 	h1{
@@ -22,19 +30,6 @@
 		font-weight: bold;
 	}
 
-
-	.container{
-		position: relative;
-		margin: 240px;
-	}
-	.container .box{
-		position: relative;
-		/*width: calc(400px - 30px);
-		height: calc(300px - 30px);*/
-		background: pink;
-		float: left;
-		margin: 15px;
-		text-align: center;
 	}
 	div.title{
 		text-align: center;
@@ -43,22 +38,51 @@
 	/************ Large Devices **********/
 
 	@media (min-width: 992px){
-		.box{
-			width: 80%;
+		.col-lg-1, .col-lg-2, .col-lg-3 {
+			float: left;
+		}
+
+		.col-lg-1{
+			width: 33.33%;
+		}
+		.col-lg-2{
+			width: 33.33%;
+		}
+		.col-lg-3{
+			width: 33.33%;
 		}
 	}
 
 	/********* Medium Devices **********/
 
-	@media (min-width: 768px and max-width: 991px){
-		.box{
-			width: 80%;
+	@media (min-width: 768px) and (max-width: 991px){
+		.col-lg-1, .col-lg-2, .col-lg-3 {
+			float: left;
 		}
+		.col-lg-1{
+			width: 50%%;
+		}
+		.col-lg-2{
+			width: 50%%;
+		}
+		.col-lg-3{
+			width: 100%%;
+		}
+
 	}
 
 	/********** Small Devices **********/
 	@media (max-width: 767px){
-		.box{
+		.col-lg-1, .col-lg-2, .col-lg-3 {
+			float: left;
+		}
+		.col-lg-1 {
+			width: 33.33%;
+		}
+		.col-lg-2 {
+			width: 66.66%;
+		}
+		.col-lg-3{
 			width: 100%;
 		}
 	}
@@ -69,8 +93,7 @@
 <body>
 
 	<h1>The Menu</h1>
-	<div class="container">
-		<div class="box">
+	<div class="row">
 			<div class="content">
 				<h3><b>Sushi</b></h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -81,7 +104,7 @@
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
 		</div>
-		<div class="box">
+		<div class="row">
 		<div class="content">
 				<h3><b>Chick Noodle Soup</b></h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -92,7 +115,7 @@
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
 		</div>
-		<div class="box">
+		<div class="row">
 		<div class="content">
 				<h3><b>Rice</b></h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
