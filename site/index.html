@@ -29,8 +29,8 @@
 	}
 	.container .box{
 		position: relative;
-		width: calc(400px - 30px);
-		height: calc(300px - 30px);
+		/*width: calc(400px - 30px);
+		height: calc(300px - 30px);*/
 		background: pink;
 		float: left;
 		margin: 15px;
@@ -45,6 +45,21 @@
 	@media (min-width: 992px){
 		.box{
 			width: 80%;
+		}
+	}
+
+	/********* Medium Devices **********/
+
+	@media (min-width: 768px and max-width: 991px){
+		.box{
+			width: 80%;
+		}
+	}
+
+	/********** Small Devices **********/
+	@media (max-width: 767px){
+		.box{
+			width: 100%;
 		}
 	}
 
