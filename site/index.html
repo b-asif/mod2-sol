@@ -12,6 +12,30 @@
 		overflow: auto;
 	}
 
+	.row {
+    text-align: justify;
+    min-width: 412px;
+    border: 1px solid green;
+    width: 80%; /* it changes by screen size actually */
+    height: 90px;
+    padding: 5px;
+}
+
+.row:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.col {
+    display: inline-block;
+}
+.box {
+    border: 1px solid #DDD;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
 	p {
 		height: 150px;
 		width: 90%;
@@ -25,7 +49,7 @@
 
 		padding: 10px;
 		padding-top: 60px;
-		
+
 	}
 
 	span {
@@ -90,6 +114,7 @@
 
 	<h1>The Menu</h1>
 	<div class="container">
+		<div class="row">
 		<section class="first" style="background-color: lightblue;">
 			<h2>Sushi</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -118,6 +143,7 @@
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			
 		</section>
+	</div>
 	</div>
 </body>
 
